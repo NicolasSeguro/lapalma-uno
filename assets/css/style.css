@@ -1,0 +1,1567 @@
+/* Template Name: Sami
+   Author: Theme_Family
+   Version: 1.0.0
+   Created: April 2022
+   File Description: Main Css file of the theme
+*/
+/****************************************\
+    CSS INDEX
+    =============================
+    01. GENERAL STYLE (BODY, LINK COLOR,FONT SIZE,BACK TO TOP,LINE HEIGHT,PRELOADER, SECTION TITLE BTN, SECTION PADDING etc)
+    02. START BOOTSTRAP NAVIGATION OVERRIDES
+    03. START HOME SLIDER
+    04. START SERVICE DESIGN
+	05. START PRICING DESIGN
+		--START COUNTER DESIGN
+	06. START TEAM DESIGN   
+		--START COMPANY BRAND LOGO DESIGN  
+	07. START FEATURE DESIGN 
+	08.	START TESTIMONIAL DESIGN 	
+	09. START CONTACT DESIGN 
+		--START NEWSLETTER DESIGN
+    10.  START FOOTER DESIGN (START MAP DESIGN)
+  =============================================================*/
+
+/**************************************
+ * 01. START GENERAL STYLE
+ *************************************/
+ body {
+    font-family: var(--thm-font);
+    line-height: 30px;
+    color: var(--thm-p);
+  }
+  :root {
+      --thm-font: 'Open Sans', sans-serif;
+      --thm-base: #314AFF;
+      --thm-color: #FE552A;
+      --thm-color1: #016CBC;
+      --thm-black: #23055B;
+      --thm-black1: #333333;
+      --thm-white: #ffffff;
+      --thm-ase: #afb2bf;
+      --thm-gray: #8e8e8e;
+      --thm-f6: #F1F8FF;
+      --thm-fb: #f6f6f6;
+      --thm-f3: #f3f3f3;
+      --thm-p: #79798b;
+      --thm-line: linear-gradient(to bottom,#FF416C,#FF4B2B);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.5;
+  }
+  
+  .btn,
+  .btn:focus,
+  button,
+  button:focus {
+    outline: none !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+    outline: none;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  a {
+      color: inherit;
+      text-decoration: underline;
+  }
+  .page-wrapper {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      min-width: 300px;
+      z-index: 9;
+      overflow: hidden;
+  }
+  .section-sm {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    position: relative;
+  }
+  
+  .atf-section-padding {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    position: relative;
+  }
+  
+  .section-lg {
+    padding-bottom: 110px;
+    padding-top: 110px;
+    position: relative;
+  }
+  dl, ol, ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  .bg-lightan {
+      background: linear-gradient(to top, rgba(24, 30, 234, 0.1) 30%, #25236a 180%);
+  }
+  
+  .atf-home-center {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  .atf-home-desc-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .bg-overlay {
+    background-color: rgba(36, 42, 53, 0.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  .bg {
+   background:var(--thm-black);
+  }
+  .color-overlay {
+    background-color: var(--thm-color);
+    opacity: 0.9;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  
+  .overlay-gradient {
+    background: linear-gradient(to right, #4763cb, #c0392b);
+    opacity: 0.9;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  .box-shadow {
+      box-shadow: -2px 3px 188px -43px rgba(230, 204, 204, 0.37) inset;
+      -webkit-box-shadow: -2px 3px 188px -43px rgba(230, 204, 204, 0.37) inset;
+      -moz-box-shadow: -2px 3px 188px -43px rgba(230, 204, 204, 0.37) inset;
+  }
+  .box-shadow-1{
+    box-shadow: 0 0 0 1px rgba(190, 190, 190, 0.04), 0 1.8vw 3vw -0.7vw rgba(0, 0, 0, 0.07);
+  }
+  
+  .btn-round {
+    border-radius: 30px;
+  }
+  
+  .row > * {
+    position: relative;
+  }
+  
+  hr {
+    border: 1px solid #e2e2e2;
+  }
+  .page-wrapper{
+      background: var(--thm-black);
+  }
+  /**************************************
+   * START FONT SIZE DESIGN
+   *************************************/
+  .f-10 {
+    font-size: 10px;
+  }
+  
+  .f-12 {
+    font-size: 12px;
+  }
+  
+  .f-13 {
+    font-size: 13px;
+  }
+  
+  .f-14 {
+    font-size: 14px;
+  }
+  
+  .f-15 {
+    font-size: 15px;
+  }
+  
+  .f-16 {
+    font-size: 16px;
+  }
+  
+  .f-17 {
+    font-size: 17px;
+  }
+  
+  .f-18 {
+    font-size: 18px;
+  }
+  
+  .f-19 {
+    font-size: 19px;
+  }
+  
+  .f-20 {
+    font-size: 20px;
+  }
+  /**************************************
+   * END FONT SIZE DESIGN
+   *************************************/
+  /**************************************
+   * START LINE HEIGHT DESIGN
+   *************************************/
+  .line-height_1_4 {
+    line-height: 1.4;
+  }
+  
+  .line-height_1_6 {
+    line-height: 1.6;
+  }
+  
+  .line-height_1_8 {
+    line-height: 1.8;
+  }
+  /**************************************
+   * END LINE HEIGHT DESIGN
+   *************************************/
+   
+   /*
+  * ----------------------------------------------------------------------------------------
+  * PRELOADER
+  * ----------------------------------------------------------------------------------------
+  */
+  .atf-status {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 99999999;
+      background:var(--thm-black);
+  }
+  
+  .atf-status .atf-status-mes {
+      border: 0 solid transparent;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: calc(50vh - 75px);
+      left: calc(50vw - 75px)
+  }
+  
+  .atf-status-mes:before,
+  .atf-status-mes:after {
+      content: '';
+      border: 1em solid #ffffff;
+      border-radius: 50%;
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-animation: atf-status-mes 2s linear infinite;
+              animation: atf-status-mes 2s linear infinite;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+  }
+  
+  .atf-status-mes:before {
+      -webkit-animation-delay: .5s;
+              animation-delay: .5s
+  }
+  
+  @-webkit-keyframes atf-status-mes {
+      0% {
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+      }
+  
+      50% {
+          opacity: 1;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+      }
+  
+      100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+      }
+  }
+  
+  @keyframes atf-status-mes {
+      0% {
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+      }
+  
+      50% {
+          opacity: 1;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+      }
+  
+      100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+      }
+  }
+  
+  
+  /*END PRELOADER DESIGN*/
+  
+  /**************************************
+   * START SECTION TITLE DESIGN
+   *************************************/
+  .atf-section-title .atf-section-sub-title {
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px;
+    letter-spacing: 0.5px;
+  }
+  .atf-section-title .title {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .atf-section-title img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+  }
+  /**************************************
+   * END SECTION TITLE DESIGN
+   */
+   /**************************************
+   * START BACK TO TOP DESIGN
+   *************************************/
+   
+   .back-to-top {
+      position: fixed;
+      cursor: pointer;
+      top: 0;
+      right: 15px;
+      color: #ffffff;
+      background: var(--thm-color);
+      z-index: 4;
+      width: 40px;
+      text-align: center;
+      height: 42px;
+      line-height: 42px;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: .9s;
+      transition: .9s;
+  }
+  .back-to-top:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: var(--thm-base);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+  }
+  .back-to-top:hover:before,
+  .back-to-top:focus:before {
+      opacity: 1;
+      visibility: visible;
+  }
+  .back-to-top:hover,
+  .back-to-top:focus {
+      color: #ffffff;
+  }
+  .back-to-top.active {
+      top: 97%;
+      -webkit-transform: translateY(-98%);
+      transform: translateY(-98%);
+      opacity: 1;
+      visibility: visible;
+  }
+  .back-to-top i:last-child {
+      opacity: 0;
+      visibility: hidden;
+      top: 60%;
+  }
+  .back-to-top:hover i:first-child,
+  .back-to-top:focus i:first-child {
+      opacity: 0;
+      top: 0;
+      visibility: hidden;
+  }
+  .back-to-top:hover i:last-child,
+  .back-to-top:focus i:last-child {
+      opacity: 1;
+      visibility: visible;
+      top: 50%;
+  }
+  .back-to-top i {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      font-size: 20px;
+  }
+  .v-middle {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+  }
+   /**************************************
+   * END BACK TO TOP DESIGN
+   *************************************/
+  /**************************************
+   * START BTN DESIGN
+   *************************************/
+  .atf-themes-btn {
+      color: #fff;
+      background: transparent;
+      font-size: 17px;
+      font-weight: 400;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      padding: 12px 20px 12px;
+      margin: 5px;
+      border: none;
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s ease;
+  }
+  .atf-themes-btn:hover,
+  .atf-themes-btn:focus{
+      color: #fff;
+  }
+  .atf-themes-btn:before{
+      content: "";
+      background: var(--thm-color);
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+  }
+  .atf-themes-btn:after{
+      content: "";
+      background: linear-gradient(124deg,#ff2400, #e81d1d, #e8b71d, #e3e81d, 
+                  #1de840, #1ddde8, #2b1de8, #dd00f3,#dd00f3 );
+      background-size: auto;
+      background-size: 400%;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border-radius: 10px;
+      filter: blur(2px);
+      opacity: 0;
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      z-index: -2;
+      transition: all 0.3s ease-in-out;
+      animation: move 20s linear infinite;
+  }
+  .atf-themes-btn:hover:after{ opacity: 1; }
+  @keyframes move{
+      0%{ background-position: 0 0; }
+      50%{ background-position: 400% 0; }
+      100%{ background-position: 0 0; }
+  }
+  @media only screen and (max-width: 767px){
+      .atf-themes-btn{ margin-bottom: 30px; }
+  }
+  /**************************************
+   * END BTN DESIGN
+   *************************************/
+   /**************************************
+   *01. END GENERAL STYLE
+   *************************************/
+  /**************************************
+   * 02. START BOOTSTRAP NAVIGATION OVERRIDES
+   *************************************/
+  .navbar-customize {
+    background-color: transparent;
+    padding: 20px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .navbar-customize .navbar-nav li a {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 15px;
+    background-color: transparent !important;
+    margin: 0 10px;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    font-weight: 500;
+    transition: all 0.5s;
+  }
+  
+  .navbar-toggler {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: var(--thm-color);
+    transition: all 0.5s;
+  }
+  
+  .navbar-customize.header-sticky .custom-menu {
+    box-shadow: none;
+  }
+  
+  .logo .logo-light {
+    display: inline-block;
+  }
+  
+  .logo .logo-dark {
+    display: none;
+  }
+  
+  .header-sticky .logo .logo-dark {
+    display: inline-block;
+  }
+  
+  .header-sticky .logo .logo-light {
+    display: none;
+  }
+  
+  .nav-button {
+    margin-left: 20px;
+  }
+  
+  .navbar-customize .navbar-nav li.active a,
+  .navbar-customize .navbar-nav li a:hover,
+  .navbar-customize .navbar-nav li a:focus,
+  .navbar-customize .navbar-nav li a:active {
+    color: var(--thm-white) !important;
+  }
+  
+  /*---Navbar-White--*/
+  .navbar-customize.navbar-white .navbar-nav li a,
+  .navbar-customize.navbar-white .navbar-brand,
+  .navbar-white .navbar-toggle {
+    color: var(--thm-white) !important;
+  }
+  
+  .navbar-customize.navbar-white .navbar-nav li.active a,
+  .navbar-customize.navbar-white .navbar-nav li a:hover,
+  .navbar-customize.navbar-white .navbar-nav li a:focus,
+  .navbar-customize.navbar-white .navbar-nav li a:active {
+    color: var(--thm-white) !important;
+  }
+  
+  /*---NAVBAR STICKY--*/
+  .header-sticky.navbar-customize {
+      margin-top: 0px;
+      padding: 18px 0px;
+      background-color: var(--thm-black);
+      box-shadow: 0px 3px 10px 0px rgba(225, 225, 225, 0.2);
+  }
+  
+  .header-sticky.navbar-customize.sticky-dark {
+    background-color: var(--thm-white); 
+  }
+  
+  .header-sticky .logo {
+    color: var(--thm-color)  !important;
+  }
+  
+  .header-sticky .navbar-nav li a {
+    color: var(--thm-color)  !important;
+  }
+  
+  .header-sticky.navbar-customize .navbar-nav li.active a,
+  .header-sticky.navbar-customize .navbar-nav li a:hover,
+  .header-sticky.navbar-customize .navbar-nav li a:focus,
+  .header-sticky.navbar-customize .navbar-nav li a:active {
+    color: var(--thm-white) !important;
+  }
+  
+  .header-sticky.navbar-customize .navbar-toggles {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid transparent;
+    outline: 0;
+  }
+  
+  .header-sticky .navbar-nav {
+    margin-top: 0px;
+  }
+  
+  .navbar-toggler {
+      position: relative;
+  }
+  .navbar-toggler:focus, .navbar-toggler:active {
+      outline: 0;
+  }
+  .navbar-toggler span {
+      display: block;
+      background: var(--thm-white);
+      border: 1px solid var(--thm-white);
+      height: 3px;
+      width: 25px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      left: 0;
+      opacity: 1;
+  }
+  .navbar-light .navbar-toggler {
+      color: rgba(0, 0, 0, 0.55);
+      border-color: none ! important;
+  }
+  .nav-link.atf-themes-btn {
+      padding: 10px 27px !important;
+      color: white !important;
+  }
+  .nav-item .atf-themes-btn{transition: all 0.3s ease-in-out 0s;}
+  .nav-item .atf-themes-btn:hover{
+      color: white !important;
+  }
+  /**************************************
+   * END BOOTSTRAP NAVIGATION OVERRIDES
+   *************************************/
+   /**************************************
+   *03. START HOME DESIGN
+   *************************************/
+  #home{
+      position:relative;
+      z-index: 1;
+  }
+  .atf-header-area {
+      height: 750px;
+      overflow: hidden;
+      z-index:1;
+  }
+  .atf-single-details img {
+      width: 50px;
+      height: 50px;
+  }
+  .atf-header-area::before {
+      content: '';
+      position: absolute;
+      right: 0px;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: -1;
+  }
+  .atf-align-items-details {
+      display: flex;
+      align-items: center;
+      min-height: 100%;
+  }
+  .atf-header-area .atf-single-details h2 {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--thm-white);
+      text-shadow: 1px 1px 8px rgba(0,0,0, 0.2);
+  }
+  .atf-single-details h5 {
+      -webkit-animation: 1.7s .9s fadeInDown both;
+      animation: 1.7s .9s fadeInDown both; }
+  .atf-single-details h2 {
+      -webkit-animation: 1.7s .9s fadeInLeft both;
+      animation: 1.7s .9s fadeInLeft both; }
+  
+  .atf-single-details p {
+      -webkit-animation: 1.7s .8s fadeInLeft both;
+      animation: 1.7s .9s fadeInLeft both; }
+  
+  .atf-single-details .atf-home-btn{
+      -webkit-animation: 1.7s 1s fadeInUp both;
+      animation: 1.9s 1s fadeInUp both; }
+      
+  .atf-single-details .atf-main-btn{
+      -webkit-animation: 1.7s 1s fadeInUp both;
+      animation: 1.9s 1s fadeInUp both; }
+      
+  
+  .atf-menu-btn a {
+      padding: 5px 12px !important;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      -ms-transition: all 0.5s ease-in-out 0s;
+      -o-transition: all 0.5s ease-in-out 0s;
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
+      display:inline-block;
+      border:none;
+  }
+  .atf-menu-btn a:hover {	
+      box-shadow:0 0 15px rgba(0,0,0,0.2);
+  }
+  .atf-single-details .atf-booking-form-item .form-group i {
+      position: absolute;
+      right: 15px;
+      color: var(--thm-color);
+      font-size: 20px;
+      top: 35%;
+  }
+  /**************************************
+   * 03. END HOME DESIGN
+   *************************************/
+  /**************************************
+   *04. START SERVICE DESIGN
+   *************************************/
+  .atf-services-box {
+      padding: 35px 25px;
+      /* border: 1px solid #efefef; */
+      transition: all 0.3s ease-in-out;
+      border-radius: 10px;
+      box-shadow: -2px 3px 188px -43px rgba(0,0,0,0.37) inset;
+      -webkit-box-shadow: -2px 3px 188px -43px rgba(240, 217, 217, 0.37) inset;
+      -moz-box-shadow: -2px 3px 188px -43px rgba(0,0,0,0.37) inset;
+  }
+  .atf-services-box .atf-services-img {
+    position: relative;
+  }
+  
+  .atf-services-box .atf-services-img img {
+    width: 50px;
+  }
+  .atf-services-box.active {
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 1px rgba(190, 190, 190, 0.04), 0 1.8vw 3vw -0.7vw rgba(0, 0, 0, 0.07);
+  }
+  .atf-services-box h5{
+      color:var(--thm-white);
+  }
+  /**************************************
+   * 04.END SERVICE DESIGN
+   *************************************/
+   
+   /**************************************
+   * 05. START GALLERY DESIGN
+   *************************************/
+  #portfolio {
+      position: relative;
+      overflow: hidden;
+  }
+  .atf-portfolio-area .portfolio-filter {
+      margin-bottom: 30px;
+  }
+  .atf-portfolio-area .portfolio-filter button {
+      font-size: 13px;
+      margin: 0 15px 20px 0;
+      overflow: hidden;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 8px 15px;
+      transition: 0.4s;
+      outline: none;
+      -webkit-transition: 0.4s;
+      -ms-transition: 0.4s;
+      border-radius: 4px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      color: var(--thm-black);
+      box-shadow: none;
+      border: none;
+  }
+  .atf-portfolio-area .portfolio-filter button:hover,
+  .atf-portfolio-area .portfolio-filter button.active {
+      color: var(--thm-white);
+      background: var(--thm-color);
+  }
+  .atf-portfolio{
+       overflow: hidden;
+       position: relative;
+  }
+   .atf-portfolio{
+       margin:0 2px ! important;
+   }
+  .atf-portfolio img{
+       width: 100%;
+       height: auto;
+       transition: all 0.5s ease 0s;
+   }
+  .atf-portfolio:hover img{
+       transform-origin: left center;
+       transform: scale(1.1);
+       filter: grayscale(100%);
+   }
+  .atf-portfolio .atf-portfolio-content{
+       color: var(--thm-9);
+       background: var(--thm-white);
+       text-align: right;
+       padding: 10px 15px;
+       box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+       opacity: 0;
+       transform: skew(15deg);
+       position: absolute;
+       bottom: 10px;
+       right: 10px;
+       z-index: 2;
+       transition: all 0.5s ease-out 0s;
+   }
+   .atf-portfolio:hover .atf-portfolio-content{
+       opacity: 1;
+       transform: skew(0);
+   }
+   .atf-portfolio .title{
+       text-transform: capitalize;
+       margin: 0 0 3px;
+   }
+   .atf-portfolio .post{
+       color: var(--thm-color);
+       text-transform: capitalize;
+       display: block;
+   }
+   .atf-portfolio .icon{
+       background-color: var(--thm-white);
+       padding: 0 8px;
+       margin: 0;
+       list-style: none;
+       box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+       opacity: 0;
+       transform: skew(15deg);
+       position: absolute;
+       left: 10px;
+       bottom: 10px;
+       z-index: 2;
+       transition: all 0.5s ease-out 0s;
+   }
+   .atf-portfolio:hover .icon{
+       opacity: 1;
+       transform: skew(0);
+   }
+   .atf-portfolio .icon li{ margin: 8px 0; }
+   .atf-portfolio .icon li a{
+       color: var(--thm-white);
+       background-color: var(--thm-black);
+       text-align: center;
+       line-height: 36px;
+       height: 35px;
+       width: 35px;
+       border-radius: 5px;
+       display: block;
+       transition: all 0.3s ease 0s;
+   }
+   .atf-portfolio .icon li a:hover{
+       color: var(--thm-white);
+       background-color: var(--thm-color);
+       box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+   }
+   @media only screen and (max-width:991px){
+       .atf-portfolio{ margin: 0 0 30px; }
+   }
+   /* owl theme */
+  .atf-main-testimonials.owl-theme .owl-dots, .owl-theme .owl-nav {
+      margin-top: 35px ! important;
+  }
+  .atf-main-testimonials.owl-theme .owl-nav.disabled + .owl-dots {
+      margin-left: 50px;
+      line-height: .7;
+  }
+  .atf-main-testimonials .owl-controls{
+       margin-top: -25px;
+  }
+  .atf-main-testimonials.owl-theme .owl-dots .owl-dot span {
+      width: 8px;
+      height: 8px;
+      margin: 0 8px;
+      border-radius: 5px;
+      background: transparent;
+      border: 1px solid var(--thm-white);
+      transition: 0.3s all ease-in-out;
+  }
+  .atf-main-testimonials.owl-theme .owl-dots .owl-dot.active span,
+  .atf-main-testimonials.owl-theme .owl-dots .owl-dot:hover span {
+      width: 35px;
+      transition: 0.3s all ease-in-out;
+      border: 1px solid var(--thm-color);
+      background: var(--thm-color);
+  }
+  /**************************************
+   * 05. END GALLERY DESIGN
+   *************************************/
+   /**************************************
+   *06. START TEAM DESIGN
+   *************************************/
+  .our-team {
+      padding: 20px;
+      overflow: hidden;
+  }
+  .our-team img{
+      width:100%;
+      height: auto;
+      border-radius:10px;
+  }
+  .our-team .team-content{
+      padding:15px 0 15px 5px;
+      text-align:center;
+  }
+  .our-team .team-title{
+      margin:0 0 10px;
+  }
+  .our-team .team-title a{
+      display: block;
+      transition: all 0.50s ease;
+  }
+  .team-title a:hover {
+      color:var(--thm-base);
+      text-decoration:none;
+  }
+  .our-team .team-title small{
+      font-size:13px;
+  }
+  .our-team .description {
+      margin-bottom: 25px;
+      font-size: 15px;
+      color:var(--thm-p);
+  }
+  .our-team .social-link{
+      padding:0;
+      margin:0;
+      text-align:center;
+  }
+  .our-team .social-link li{
+      display:inline-block;
+      list-style:none;
+  }
+  .our-team .social-link li a {
+      border: 1px solid var(--thm-p);
+      padding: 7px;
+      color: var(--thm-p);
+      border-radius: 5px;
+  }
+  .our-team .social-link li a:hover{
+      color:#fff;
+      text-decoration:none;
+  }
+  .our-team .social-link li a.fa-facebook:hover{
+      background:#5d82d1;
+  }
+  .our-team .social-link li a.fa-google:hover{
+      background:#eb5e4c;
+  }
+  .our-team .social-link li a.fa-twitter:hover{
+      background: #40bff5;
+  }
+  .our-team .social-link li a.fa-pinterest:hover{
+      background: #e13138;
+  }
+  .our-team .read {
+      float: right;
+      border: 1px solid var(--thm-p);
+      color: var(--thm-p);
+      padding: 2px 15px;
+      border-radius: 5px;
+  }
+  .our-team:hover .read{
+      background:var(--thm-base);
+      color:var(--thm-white);
+  }
+  @media only screen and (max-width: 990px) {
+      .our-team{
+          margin-bottom:30px;
+      }
+  }
+   
+   /**************************************
+   *06. END TEAM DESIGN
+   *************************************/
+  
+  /*
+  * ----------------------------------------------------------------------------------------
+  *START COMPANY BRAND LOGO DESIGN  
+  * ----------------------------------------------------------------------------------------
+  */
+  .atf-brand-area .owl-controls {
+      display:none;
+  }
+  .atf-brand-active{ text-align: center }
+  .atf-brand-active > a { display:inline-block;}
+  .atf-brand-area img {
+      padding-right: 5px;
+  }
+  #atf-partner .tns-nav {
+      margin: 0 auto;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  #atf-partner .tns-nav {
+      height: 16px;
+      margin: 0px 8px;
+      border-radius: 50%;
+      border: none;
+      display: inline-block;
+      transition: all 0.5s ease-in-out;
+  }
+  #atf-partner .tns-nav button {
+      margin-left: 5px;
+      background: var(--thm-color);
+      height: 10px;
+  }
+  #atf-partner  .tns-nav-active {
+      width: 0px;
+      height: 15px;
+      background: var(--thm-base)!important;
+  }
+  .accordion-button:not(.collapsed) {
+      color: var(--thm-white);
+  }
+  .accordion-button:focus {
+      z-index: 3;
+      border-color: none;
+      outline: 0;
+      box-shadow: none;
+  }
+  .accordion-button:not(.collapsed) {
+      color: var(--thm-white);
+      background-color: var(--thm-color);
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * END COMPANY BRAND LOGO DESIGN 
+  * ----------------------------------------------------------------------------------------
+  */
+  
+   /**************************************
+   * 06.START ROADMAP DESIGN
+   *************************************/
+  #roadmap .tns-nav {
+      margin: 0 auto;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  #roadmap .tns-nav {
+      height: 16px;
+      margin: 0px 8px;
+      border-radius: 50%;
+      border: none;
+      display: inline-block;
+      transition: all 0.5s ease-in-out;
+  }
+  #roadmap .tns-nav button {
+      margin-left: 5px;
+      background: var(--thm-color);
+      height: 10px;
+  }
+  #roadmap .tns-nav-active {
+      width: 0px;
+      height: 15px;
+      background: var(--thm-base)!important;
+  }
+  .main-timeline:after{
+      content: '';
+      display: block;
+      clear: both;
+  }
+  .main-timeline .timeline{
+      width: calc(50% + 1px);
+      margin: 0 0 20px 5px;
+      float: right;
+  }
+  .main-timeline .timeline-content{
+      color: #666;
+      min-height: 150px;
+      padding: 15px 0 15px 75px;
+      display: block; 
+      position: relative;
+  }
+  .main-timeline .timeline-content:hover{ text-decoration: none; }
+  .main-timeline .timeline-content:before{
+      content: '';
+      background: linear-gradient(to right bottom,#FBBA27 50%,#F66D50 51%);
+      height: 150px;
+      width: 120px;
+      position: absolute;
+      left: -60px;
+      top: 0;
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  }
+  .main-timeline .timeline-icon{
+      color: #555;
+      background-color: #fff;
+      font-size: 40px;
+      text-align: center;
+      line-height: 98px;
+      height: 100px;
+      width: 100px; 
+      border: 2px solid #333;
+      box-shadow: 4px 4px 0 rgba(0,0,0,0.15);
+      border-radius: 50%;
+      position: absolute;
+      left: -50px;
+      top: 10px;
+  }
+  .main-timeline .title{
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 0 0 7px;
+  }
+  .main-timeline .description{
+      margin: 0;
+  }
+  .main-timeline .timeline:nth-child(even){
+      margin: 0 5px 20px 0;
+      float: left;
+  }
+  .main-timeline .timeline:nth-child(even) .timeline-content{ padding: 15px 75px 15px 0; }
+  .main-timeline .timeline:nth-child(even) .timeline-content:before{
+      left: auto;
+      right: -60px;
+  }
+  .main-timeline .timeline:nth-child(even) .timeline-icon{
+      left: auto;
+      right: -50px;
+  }
+  .main-timeline .timeline:nth-child(4n+2) .timeline-content:before{
+      background: linear-gradient(to right bottom,#33ddb0 50%,#625DC1 51%);
+  }
+  .main-timeline .timeline:nth-child(4n+3) .timeline-content:before{
+      background: linear-gradient(to right bottom,#a6e530 50%,#33ce7b 51%);
+  }
+  .main-timeline .timeline:nth-child(4n+4) .timeline-content:before{
+      background: linear-gradient(to right bottom,#30c9c9 50%,#dd35c1 51%);
+  }
+  @media screen and (max-width:767px){
+      .main-timeline .timeline,
+      .main-timeline .timeline:nth-child(even){
+          width: 100%;
+          margin: 0 0 25px;
+      } 
+      .main-timeline .timeline-content:before{ left: 0; }
+      .main-timeline .timeline-content{ padding-left: 135px; }
+      .main-timeline .timeline-icon{ left: 10px; }
+      .main-timeline .timeline:nth-child(even) .timeline-content:before{ right: 0; }
+      .main-timeline .timeline:nth-child(even) .timeline-content{ padding-right: 135px; }
+      .main-timeline .timeline:nth-child(even) .timeline-icon{ right: 10px; }
+  }
+  @media screen and (max-width:576px){
+      .main-timeline .timeline-content,
+      .main-timeline .timeline:nth-child(even) .timeline-content{
+          padding: 160px 0 0 0;
+          text-align: center;
+      }
+      .main-timeline .timeline-content:before,
+      .main-timeline .timeline:nth-child(even) .timeline-content:before{
+          transform: translateX(-50%);
+          left: 50%;
+          right: auto;
+      }
+      .main-timeline .timeline-icon,
+      .main-timeline .timeline:nth-child(even) .timeline-icon{
+          transform: translateX(-50%);
+          left: 50%;
+          right: auto;
+      }
+  }
+  .timeline-date {
+      background: var(--thm-color);
+      padding: 5px 14px;
+      font-size: 14px;
+  }
+  /**************************************
+   * 07. END TIMELINE DESIGN
+   *************************************/
+   /**************************************
+   * 08. START TESTIMONIAL DESIGN
+   *************************************/
+   .testi-area {
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
+  
+  .testi-area .testi-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .testi-area .testi-icon i {
+    font-size: 40px;
+    position: relative;
+    top: 12px;
+  }
+  
+  .client-images img {
+    height: 40px;
+    opacity: 0.3;
+    transition: all 0.5s;
+  }
+  
+  .client-images img:hover {
+    opacity: 0.7;
+  }
+  .atf-icon-testi.float-end {
+      margin-top: -40px;
+      margin-right: 20px;
+  }
+  .atf-icon-testi i{
+      color: var(--thm-base);
+  }
+   /**************************************
+   * 08. END TESTIMONIAL DESIGN
+   *************************************/
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 09.START CONTACT DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .atf-contact-btn button:hover {
+      color:var(--thm-black);
+  }
+  .contact .form-control {
+      padding: 12px 15px;
+      border-radius: 8px;
+      border-left: 2px solid var(--thm-color);
+      margin: 15px 0;
+  }
+  .contact .form-control:focus {
+      border-color: var(--thm-color);
+      box-shadow: none;
+      outline: 0 none;
+  }
+  .contact textarea {
+      border-radius: 0px;
+      box-shadow: none;
+      padding: 10px;
+      height: 100px;
+  }
+  .contact textarea:focus {
+      box-shadow: none;
+      outline: 0 none;
+      border-color: var(--thm-base);
+  }
+  .success {
+      background: #fff none repeat scroll 0 0;
+      padding: 20px 0;
+      text-align: left;
+  }
+  .form-message {
+      margin-top:20px;
+  }
+  .accordion-button:not(.collapsed) {
+      color: var(--thm-white);
+  }
+  
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 09. END CONTACT DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * START NEWSLETTER DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .atf-newsletter {
+      background: var(--thm-color);
+      border-radius: 10px;
+  }
+  .atf-mailchamp-headding h2{
+      font-weight:700;
+  }
+  .atf-mailchamp-subscribe{
+      position:relative;
+  }
+  .atf-mailchamp-subscribe form input:focus {
+      box-shadow: none;
+      outline: 0 none;
+      border-color: var(--thm-base);
+  }
+  .atf-mailchamp-subscribe form input {
+      width: 100%;
+      height: 50px;
+      padding-left: 15px;
+  }
+  .atf-mailchamp-subscribe  .form-control{
+      display:inline-block;
+  }
+  .atf-mailchamp-subscribe  label{
+      display:block;
+  }
+  .atf-mailchamp-subscribe  .form-group{
+      margin-bottom:0;
+  }
+  .atf-mailchamp-subscribe .btn {
+      position: absolute;
+      right: 7px;
+      background: transparent;
+      box-shadow: none;
+      top: 6px;
+      background: var(--thm-color);
+      padding: 5px 15px;
+  }
+  .atf-mailchamp-subscribe .atf-subscription-label {
+      color: var(--thm-black);
+  }
+  .atf-mailchamp-subscribe .btn i {
+      color: var(--thm-white);
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * END NEWSLETTER DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 14.START ADDRESS DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .atf-contact-details:last-child {
+      border:none;
+  }
+  
+  .atf-contact-details {
+      overflow: hidden;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      border-bottom: 1px solid #eee;
+      display: inline-block;
+  }
+  .atf-contact-details i {
+      font-size: 20px;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: var(--thm-white);
+      text-align: center;
+      margin: 8px 0 25px;
+      border-radius: 5%;
+      background: var(--thm-color);
+      float: left;
+      margin-right: 25px;
+  }
+  .atf-contact-details h5 {
+      color: var(--thm-white);
+  }
+  .atf-contact-details p {
+      margin-top: 10px;
+      color: var(--thm-white);
+      display: block;
+      overflow: hidden;
+  }
+  
+   /**************************************
+   * 13.START FOOTER DESIGN
+   *************************************/
+   .bg-footer {
+    padding: 25px 0px 25px 0px;
+  }
+  .atf-footer-box h5{
+      color:var(--thm-white);
+  }
+  .atf-list-menu li a{
+      color:var(--thm-white);
+  }
+  .atf-list-menu li a:hover {
+      text-decoration: underline !important;
+      transition: 0.3s ease-in-out;
+  }
+  
+  .footer-area{
+      position:relative;
+  }
+  .footer-area::before {
+      content: '';
+      position: absolute;
+      right: 0px;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+  }
+  .border-1{
+     border-bottom: 1px solid #efefef;
+  }
+  .contact-social i:hover{
+      background: var(--thm-white);
+      color: var(--thm-black);
+  }
+  .contact-social i {
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    line-height: 36px;
+    border-radius: 8%;
+    text-align: center;
+    background: var(--thm-color);
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+    color: #ffffff;
+  }
+   /**************************************
+   *13. END FOOTER DESIGN
+   *************************************/
+  
+  @media (min-width: 200px) and (max-width: 991px) {
+      .navbar-customize {
+          margin-top: 0px;
+          padding: 12px 0px !important;
+          box-shadow: 0 0 0 1px rgba(190, 190, 190, 0.04), 0 1.8vw 3vw -0.7vw rgba(0, 0, 0, 0.07);
+          color: #ffffff !important;
+          background: var(--thm-color);;
+       }
+       
+       .main-timeline .timeline-content{
+          padding: 0px 0 15px 75px;
+       }
+      .atf-services-box{
+          margin:15px 0;
+      }
+      .domain-btn{
+          margin:15px 0;
+      }
+      .atf-counter-box{
+          margin:15px 0;
+      }
+      .our-team{
+          margin:15px 15px;
+      }
+      .atf-contact-details{
+          margin:15px 0;
+      }
+      
+      .atf-pricing-list{
+          text-align:center;
+          padding-left:0px;
+      }
+      .atf-mailchamp-headding{
+          margin-bottom:30px;
+      }
+      .post-slide{
+          margin-bottom:30px;
+      }
+      .atf-footer-box{
+          margin-bottom:30px;
+      }
+      .atf-home-title{
+          font-size: 40px;
+      }
+      .navbar-collapse {
+          overflow: auto;
+          max-height: calc(100vh - 80px);
+      }
+      
+      
+  }
+  @media (min-width: 200px) and (max-width: 1024px) {
+    .atf-header-area{
+      height:900px;
+    }
+    .atf-header-area .atf-single-details h2{
+          font-size:30px;
+       }
+    .navbar-customize .navbar-nav {
+      margin-left: 0px;
+    }
+    .navbar-customize .navbar-nav li.active {
+      border-color: transparent;
+    }
+    .navbar-customize .navbar-nav li a {
+      transition: all 0.4s;
+      margin: 6px;
+      color: #1d2a5f !important;
+      padding: 6px 0;
+    }
+    .navbar-customize > .container {
+      width: 90%;
+    }
+    .home-title {
+      font-size: 36px;
+    }
+    .navbar-white .navbar-toggler {
+      color: #1d2a5f !important;
+    }
+    .navbar-customize .navbar-nav li.active a,
+    .navbar-customize .navbar-nav li a:hover,
+    .navbar-customize .navbar-nav li a:active {
+      color: #c0392b !important;
+    }
+    .navbar-toggler {
+      font-size: 24px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+    .carousel-indicators {
+      right: 0;
+    }
+    .logo .logo-light {
+      display: none;
+    }
+    .logo .logo-dark {
+      display: inline-block;
+    }
+  }
+  
+  @media (max-width: 991px) {
+      .navbar-collapse {
+          overflow: auto;
+          max-height: calc(100vh - 80px);
+      }
+      .mt-sm-30{
+          margin-top:40px;
+      }
+      .mb-sm-30{
+          margin-bottom:40px;
+      }
+      .pt-sm-30{
+          padding-top:40px;
+      }
+      .pb-sm-30{
+          padding-bottom:40px;
+      }
+  }
+  @media (max-width: 767px) {
+      .atf-home-title{
+          font-size:40px;
+      }
+  }
+  @media (max-width: 320px) {
+      .atf-home-title{
+          font-size:25px;
+      }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px !important;
+    }
+  }
